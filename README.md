@@ -1,44 +1,44 @@
-# 💊 MedLens
+# 🍬 GlucoTrack-AI
 
-**MedLens** is a smart assistant that scans a user's list of medications—either entered manually or extracted via image recognition from prescription labels—and checks for potential drug interactions and side effects. It cross-references with medical databases like **DrugBank** and **openFDA**, and uses NLP to explain the results in user-friendly language.
+**GlucoTrack-AI** is a predictive analytics system designed to help individuals with diabetes or prediabetes manage their blood sugar levels without constant finger-pricking. Instead of relying on continuous glucose monitors (CGMs), the system uses user-provided lifestyle data—such as meals, physical activity, and sleep—to predict blood sugar trends and provide personalized recommendations.
 
-Designed to support safe medication management, MedLens helps users understand their prescriptions, flag dangerous combinations, and make informed decisions with accessible, AI-powered insights.
+By leveraging AI and machine learning, GlucoTrack-AI empowers users to make informed decisions about their health and improve long-term management of diabetes through data-driven insights.
 
 ## 📌 Features
 
-- 📷 **Medication Input & Recognition**:
-  - Manual entry or OCR-based extraction from prescription labels
-  - Auto-suggest and autocomplete for drug names
-  - Supports multiple input languages and formats
+- 🥗 **Personalized Blood Sugar Prediction**:
+  - Predicts blood sugar levels based on user data (meals, activity, sleep)
+  - Uses machine learning models trained on real-world data
+  - Provides predictions for up to 24 hours ahead
 
-- ⚠️ **Drug Interaction Detection**:
-  - Cross-references drug combinations using DrugBank/openFDA APIs
-  - Identifies interaction severity: minor, moderate, severe
-  - Lists contraindications and redundant medications
+- 🍽️ **Meal & Activity Logging**:
+  - Users log meals, snacks, and physical activities
+  - Automatic classification of foods (carbs, proteins, fats)
+  - Tracks exercise routines, intensity, and duration
 
-- 🧠 **NLP-Powered Explanations**:
-  - Summarizes side effects, usage warnings, and interactions
-  - Converts clinical terms into plain-language descriptions
-  - Highlights urgent risks with clear visual cues
+- 🛏️ **Sleep Impact Analysis**:
+  - Tracks sleep patterns and analyzes their effect on blood sugar levels
+  - Provides recommendations for improving sleep hygiene
+  - Correlates sleep duration and quality with glucose spikes
 
-- 📖 **Medication Insights & History**:
-  - Stores user medication profiles locally or securely in the cloud
-  - Tracks changes in prescriptions over time
-  - Offers reminders and optional journaling for effects tracking
+- 📊 **Data-Driven Insights & Recommendations**:
+  - Personalized insights based on past trends and lifestyle habits
+  - Alerts for potential blood sugar imbalances
+  - Daily and weekly reports with actionable advice
 
-- 🔐 **Privacy & Security**:
-  - No health data stored without user consent
-  - OCR and analysis can run entirely on-device
-  - End-to-end encryption for all synced data
+- 🔐 **Privacy-Focused & Secure**:
+  - All data is encrypted and stored securely
+  - User has full control over shared information
+  - Option to sync data with third-party health apps (Google Fit, Apple Health)
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React Native, Expo, React Navigation
-- **Backend**: Python (Flask), Node.js (Express)
-- **AI & NLP**: spaCy, OpenAI API, Tesseract.js for OCR
-- **APIs**: DrugBank, openFDA
-- **Storage**: SQLite (mobile), Firebase (optional sync)
-- **Security**: HTTPS, OAuth2, AES encryption
+- **Frontend**: React Native, Redux, Chart.js
+- **Backend**: Python (Flask, Pandas, TensorFlow)
+- **Machine Learning**: TensorFlow, scikit-learn
+- **APIs**: Google Fit, Apple Health (optional integration)
+- **Storage**: SQLite (local), Firebase (sync)
+- **Security**: HTTPS, AES encryption, OAuth2
 
 ## 🚀 Getting Started
 
@@ -46,13 +46,14 @@ Designed to support safe medication management, MedLens helps users understand t
 
 - Node.js 18+
 - Python 3.9+
+- TensorFlow 2.x+
 - Expo CLI
-- DrugBank/openFDA API keys
+- Google Fit or Apple Health account (optional)
 
 ### Clone & Run
 
 ```bash
-git clone https://github.com/your-username/medlens.git
-cd medlens
+git clone https://github.com/your-username/glucotrack-ai.git
+cd glucotrack-ai
 npm install
 npx expo start
